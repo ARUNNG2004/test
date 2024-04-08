@@ -1,11 +1,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #ba9d9d;
+  background-color: #ffffff;
 }
 
 .contact-container {
-  display: flex;
+
   justify-content: center;
   align-items: center;
   height: 500px;
@@ -13,7 +13,7 @@ body {
 
 .contact-content {
   background-color: #e7c6c6;
-  padding: 20px;
+  padding: 15px;
   padding-bottom: 90px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
