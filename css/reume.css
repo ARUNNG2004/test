@@ -1,95 +1,97 @@
 .resume{
 
-padding: 150px;
-    background-color: #555;
-}
- .resume-container{
-
-
-   display: flex;
+    padding: 150px;
+        background-color: #585353;
+        color: black;
     }
-
-    body, h1, h2, h3, p, ul {
-        margin: 0;
-        padding: 0;
-    }
+     .resume-container{
 
 
-    .resume-page {
-        padding: 50px;
-        background-color: #f9f9f9;
-    }
-
-    .section-header-allcaps  h3{
-        font-size: 38px;
-        padding-bottom: 30px;
-
-color: rgb(255, 255, 255);
-        text-transform:  uppercase;
-        font-weight: bold;
-        letter-spacing: 2px;
-
-        text-decoration: solid aqua underline;
-
-    }
-
-    .resume-block {
-        background-color: #fff;
-        padding: 30px;
-        width: 800px;
-        margin-left: 300px;
-        border-radius: 10px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    .resume-block:hover {
-        transform: translateY(-5px);
-    }
-
-    .resume-block p {
-        font-size: 18px;
-        line-height: 1.8;
-        color: #555;
-
-    }
-
-    .resume-block ul {
-        list-style-type: none;
-        padding: 0;
-        margin-top: 30px;
-    }
-
-    .resume-block li {
-        margin-bottom: 15px;
-    }
-
-    .progress {
-        height: 40px;
-        background-color:#D0D1D1;
-        border-radius: 6px;
-
-        margin-bottom: 10px;
-        overflow: hidden;
-    }
-
-    .progress-bar {
-        height: 100%;
-    background-color: #000000;
-        transition: width 1s ease-in-out;
-    }
-
-    strong {
-        font-weight: bold;
-    }
-    @media screen and (max-width: 1200px) {
-        .resume-container {
-            flex-direction: column;
-            align-items: center;
+       display: flex;
         }
+
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .resume-page {
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+
+        .section-header-allcaps  h3{
+            font-size: 28px;
+            padding-bottom: 30px;
+
+            color: rgb(0, 0, 0);
+            text-transform:  uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+            padding-bottom: 8px;
+
+            text-decoration: solid rgb(255, 255, 255)  underline;
+
+        }
+
         .resume-block {
-            margin-left: 0;
-            margin-bottom: 30px;
-            width: 100%;
+            background-color: #fff;
+            padding: 30px;
+            width: 800px;
+            margin-left: 300px;
+            border-radius: 10px;
+            box-shadow: 2px 8px 40px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
         }
-    }
+
+        .resume-block:hover {
+            transform: translateY(-5px);
+        }
+
+        .resume-block p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+
+        }
+
+        .resume-block ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 30px;
+        }
+
+        .resume-block li {
+            margin-bottom: 15px;
+        }
+
+        .progress {
+            height: 40px;
+            background-color:#D0D1D1;
+            border-radius: 6px;
+
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+        background-color: #000000;
+            transition: width 1s ease-in-out;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+        @media screen and (max-width: 1200px) {
+            .resume-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .resume-block {
+                margin-left: 0;
+                margin-bottom: 30px;
+                width: auto;
+            }
+        }
