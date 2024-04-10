@@ -11,7 +11,8 @@ a {
 
 .about {
     background-color: #1e1e1e;
-    padding: 100px;
+    padding-top: 20px;
+    padding-right: 10px;
     color: rgba(255, 255, 255, 0.4);
 }
 

@@ -66,6 +66,7 @@ body {
   .contact-content {
     padding-top: 20px;
     padding-bottom: 40px;
+    width: auto;
   }
 
   .contact-content h1 {
