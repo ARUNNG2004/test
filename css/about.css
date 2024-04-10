@@ -1,0 +1,68 @@
+a {
+    color: var(--color-1);
+    transition: all 0.3s ease-in-out;
+}
+
+.about-content h3 {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.about {
+    background-color: #1e1e1e;
+    padding: 100px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.profile-pic {
+    width: 16rem;
+    height: 16rem;
+    border: 1.6rem solid rgba(255, 255, 255, 0.02);
+    border-radius: 50%;
+}
+
+.row {
+    display: flex;
+
+}
+
+.pic-div {
+
+    width: 300px;
+    height: 300px;
+    margin-left: 200px;
+}
+
+.column {
+    display: flex;
+
+}
+
+.about-content {
+
+    width: 600px;
+    margin-left: 100px;
+    padding-top: 26px;
+}.about-content p{
+    margin-top: 4px;
+}
+.pull-quote{
+    margin-top: 35px;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-pic {
+       display: none;
+    }
+
+    .about-content {
+        width: auto;
+        margin-left: -150px;
+        padding-top: 20px; /* Adjust padding for better mobile layout */
+    }
+
+    .column {
+        width: 100%; /* Make columns take full width on mobile */
+    }
+}
