@@ -2,12 +2,12 @@
 
 .resume{
 
-    padding: 150px;
+
         background-color: #ffffff;
         color: black;
     }
      .resume-container{
-
+        padding: 200px;
 
        display: flex;
         }
@@ -26,7 +26,7 @@
         .section-header-allcaps  h3{
             font-size: 28px;
             padding-bottom: 30px;
-
+            padding-top: 30px;
             color: rgb(0, 0, 0);
             text-transform:  uppercase;
             font-weight: bold;
@@ -39,7 +39,7 @@
 
         .resume-block {
             background-color: #ffffff;
-            padding: 30px;
+            padding: 80px;
             width: 800px;
             margin-left: 300px;
             border-radius: 10px;
