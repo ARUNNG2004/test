@@ -1,6 +1,6 @@
 .about-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     height: auto;
     justify-content: start;
@@ -48,7 +48,8 @@
 }
 
 .about-content {
-    width: auto;
+width: auto;
+
 }
 
 .about-content p {
@@ -60,9 +61,11 @@
     text-align: center;
     background-color: #999999;
     width: auto;
+
     margin: 20px auto;
     padding: 20px;
 }
+
 
 .pull-quote blockquote p {
     font-weight: 400;
@@ -97,35 +100,6 @@
     }
 
     .pic-div {
-        display:none;
-    }
-}
-
-/* Super Media Query for Mobile */
-@media screen and (max-width: 400px) {
-    .about-container {
-        padding: 10px;
-    }
-
-    .about-content h3 {
-        font-size: 24px;
-    }
-
-    .about-content p {
-        font-size: 18px;
-    }
-
-    .profile-pic {
-        width: 100px;
-        height: 100px;
-        border-width: 0.8rem;
-    }
-
-    .pull-quote {
-        padding: 10px;
-    }
-
-    .pull-quote blockquote:before {
-        top: 5px;
-    }
+        display:block;
+        }
 }

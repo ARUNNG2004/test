@@ -2293,6 +2293,107 @@ color: hsla(24, 100%, 37%, 1);
 }
 
 
+/* -------------------------------------------------------------------
+ * responsive:
+ * hero
+ * ------------------------------------------------------------------- */
+
+@media screen and (max-width: 1600px) {
+    .s-hero__content h1 {
+        font-size: 9.4rem;
+    }
+    .s-hero__content h3 {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .s-hero__content h1 {
+        font-size: 8.8rem;
+    }
+    .s-hero__content h3 {
+        font-size: 2rem;
+        max-width: 680px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .s-hero__content h1 {
+        font-size: 8.4rem;
+    }
+    .s-hero__content h3 {
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .s-hero__content h1 {
+        font-size: 7.6rem;
+    }
+    .s-hero__content h3 {
+        font-size: 1.8rem;
+    }
+    .s-hero__content-social {
+        font-size: 2.4rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .s-hero__content {
+        padding-top: 12vh;
+    }
+    .s-hero__content h1 {
+        font-size: 6.8rem;
+    }
+    .s-hero__content h3 {
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .s-hero__content h1 {
+        font-size: 6.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .s-hero__content h1 {
+        font-size: 5.8rem;
+    }
+    .s-hero__content-social {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .s-hero__content h1 {
+        font-size: 5.2rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .s-hero__content h1 {
+        font-size: 4.8rem;
+    }
+    .s-hero__content h3 {
+        font-size: 1.7rem;
+    }
+    .s-hero__content h3::after {
+        width: 240px;
+    }
+    .s-hero__content-social {
+        font-size: 2rem;
+    }
+    .s-hero__content-social a {
+        margin-right: var(--vspace-0_5);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .s-hero__scroll-link .scroll-arrow {
+        display: none;
+    }
+}
 
 
 
