@@ -2108,7 +2108,9 @@ color: hsla(24, 100%, 37%, 1);
     padding-bottom: 12vh;
     position: relative;
 }
-
+.s-hero__content-about{
+    padding-top: 90px;
+}
 .s-hero__content h1 {
     font-size: 9.8rem;
     font-weight: 600;
