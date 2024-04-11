@@ -370,10 +370,6 @@ pre {
 
 /* Remove the gray background on active links in IE 10. */
 
-a {
-    background-color: transparent;
-}
-
 
 /* 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. */
@@ -666,13 +662,6 @@ html {
     box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-    -webkit-box-sizing: inherit;
-    box-sizing: inherit;
-}
-
 body {
     font-weight: normal;
     line-height: 1;
@@ -697,119 +686,6 @@ object {
     max-width: 100%;
     height: auto;
 }
-
-
-/* -------------------------------------------------------------------
- * ## typography resets
- * ------------------------------------------------------------------- */
-
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-p,
-blockquote,
-th,
-td {
-    margin: 0;
-    padding: 0;
-}
-
-p {
-    font-size: inherit;
-    text-rendering: optimizeLegibility;
-}
-
-em,
-i {
-    font-style: italic;
-    line-height: inherit;
-}
-
-strong,
-b {
-    font-weight: bold;
-    line-height: inherit;
-}
-
-small {
-    font-size: 60%;
-    line-height: inherit;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-li {
-    display: block;
-}
-
-
-/* -------------------------------------------------------------------
- * ## links
- * ------------------------------------------------------------------- */
-
-a {
-    text-decoration: none;
-    line-height: inherit;
-}
-
-a img {
-    border: none;
-}
-
-
-/* -------------------------------------------------------------------
- * ## inputs
- * ------------------------------------------------------------------- */
-
-fieldset {
-    margin: 0;
-    padding: 0;
-}
-
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="text"],
-input[type="tel"],
-input[type="url"],
-input[type="password"],
-textarea {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-
-/* ===================================================================
- * # Grid v3.0.0
- *
- *   -----------------------------------------------------------------
- * - Grid breakpoints are based on MAXIMUM WIDTH media queries,
- *   meaning they apply to that one breakpoint and ALL THOSE BELOW IT.
- * - Grid columns without a specified width will automatically layout
- *   as equal width columns.
- * ------------------------------------------------------------------- */
-
-
-/* rows
- * ------------------------------------- */
-
-
 
 
 .align-center {
@@ -1341,44 +1217,6 @@ button.btn--pill {
  * </figure>
  *
  * --------------------------------------------------------------------- */
-
-.pull-quote {
-    position: relative;
-    padding: 0;
-    margin-top: 0;
-    text-align: center;
-    background-color: var(--color-gray-1);
-}
-
-.pull-quote blockquote {
-    border: none;
-    margin: 0 auto;
-    max-width: 62rem;
-    padding-top: var(--vspace-4);
-    padding-bottom: var(--vspace-2);
-    position: relative;
-}
-
-.pull-quote blockquote p {
-    font-weight: 400;
-    color: var(--color-text-dark);
-}
-
-.pull-quote blockquote:before {
-    content: "";
-    display: block;
-    height: var(--vspace-1_25);
-    width: var(--vspace-1_25);
-    background-repeat: no-repeat;
-    background: center center;
-    background-size: contain;
-    background-image: url(../images/icons/icon-quote.svg);
-    -webkit-transform: translate3d(-50%, 0, 0);
-    transform: translate3d(-50%, 0, 0);
-    position: absolute;
-    top: var(--vspace-1_5);
-    left: 50%;
-}
 
 
 /**
@@ -2455,180 +2293,9 @@ color: hsla(24, 100%, 37%, 1);
 }
 
 
-/* -------------------------------------------------------------------
- * responsive:
- * hero
- * ------------------------------------------------------------------- */
 
-@media screen and (max-width: 1600px) {
-    .s-hero__content h1 {
-        font-size: 9.4rem;
-    }
-    .s-hero__content h3 {
-        font-size: 2.2rem;
-    }
-}
 
-@media screen and (max-width: 1400px) {
-    .s-hero__content h1 {
-        font-size: 8.8rem;
-    }
-    .s-hero__content h3 {
-        font-size: 2rem;
-        max-width: 680px;
-    }
-}
 
-@media screen and (max-width: 1200px) {
-    .s-hero__content h1 {
-        font-size: 8.4rem;
-    }
-    .s-hero__content h3 {
-        font-size: 1.9rem;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .s-hero__content h1 {
-        font-size: 7.6rem;
-    }
-    .s-hero__content h3 {
-        font-size: 1.8rem;
-    }
-    .s-hero__content-social {
-        font-size: 2.4rem;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .s-hero__content {
-        padding-top: 12vh;
-    }
-    .s-hero__content h1 {
-        font-size: 6.8rem;
-    }
-    .s-hero__content h3 {
-        max-width: 600px;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .s-hero__content h1 {
-        font-size: 6.2rem;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .s-hero__content h1 {
-        font-size: 5.8rem;
-    }
-    .s-hero__content-social {
-        font-size: 2.2rem;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .s-hero__content h1 {
-        font-size: 5.2rem;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .s-hero__content h1 {
-        font-size: 4.8rem;
-    }
-    .s-hero__content h3 {
-        font-size: 1.7rem;
-    }
-    .s-hero__content h3::after {
-        width: 240px;
-    }
-    .s-hero__content-social {
-        font-size: 2rem;
-    }
-    .s-hero__content-social a {
-        margin-right: var(--vspace-0_5);
-    }
-}
-
-@media screen and (max-width: 360px) {
-    .s-hero__scroll-link .scroll-arrow {
-        display: none;
-    }
-}
-
-section {
-    display: block;
-    unicode-bidi: isolate;
-}
-
-/* ===================================================================
- * # about
- *
- * ------------------------------------------------------------------- */
-
-.s-about {
-    --color-border: var(--color-gray-16);
-    background-color: var(--color-gray-17);
-    padding-top:100px;
-    padding-bottom: 300px;
-    color: rgba(255, 255, 255, 0.4);
-}
-
-.s-about h3 {
-    margin-top: 0;
-    color: white;
-}
-
-.s-about__pic {
-    width: var(--vspace-5);
-    height: var(--vspace-5);
-    border: 1.6rem solid rgba(255, 255, 255, 0.02);
-    border-radius: 50%;
-}
-
-.s-about__content-bottom {
-    margin-top: var(--vspace-2);
-}
-
-.s-about__content-bottom a {
-    color: rgba(255, 255, 255, 0.4);
-}
-
-.s-about__content-bottom a:hover,
-.s-about__content-bottom a:focus {
-    color: white;
-}
-
-.s-about__content-bottom .btn--download {
-    background-color: white;
-    border-color: white;
-    color: black;
-    margin-right: 0;
-}
-
-.s-about__content-bottom .btn--download svg {
-    height: 2rem;
-    width: 2rem;
-    vertical-align: middle;
-    margin-right: 1.2rem;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.s-about__content-bottom .btn--download:hover,
-.s-about__content-bottom .btn--download:focus {
-    background-color: var(--color-2);
-    border-color: var(--color-2);
-}
-
-.s-about__content-bottom .btn--download:hover svg path,
-.s-about__content-bottom .btn--download:focus svg path {
-    fill: white;
-}
-.s-resume{
-padding-top: 100px;
-}
 /* ===================================================================
  * # footer
  *

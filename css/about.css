@@ -1,69 +1,131 @@
-a {
-    color: var(--color-1);
-    transition: all 0.3s ease-in-out;
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: start;
+    padding: 20px;
+}
+
+.about-container p {
+    font-size: 22px;
+    padding: 8px;
+    margin: 0;
+}
+
+.about-container a {
+    color: aqua;
 }
 
 .about-content h3 {
-    font-size: 40px;
+    font-size: 32px;
     font-weight: bold;
     color: white;
 }
 
+.about-container figure {
+    margin-top: 30px;
+    width: auto;
+}
+
 .about {
     background-color: #1e1e1e;
-    padding-top: 20px;
-    padding-right: 10px;
-    color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .profile-pic {
-    width: 16rem;
-    height: 16rem;
-    border: 1.6rem solid rgba(255, 255, 255, 0.02);
+    width: 150px;
+    height: 150px;
+    border: 1.2rem solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
 
-.row {
-    display: flex;
-
-}
-
 .pic-div {
-
-    width: 300px;
-    height: 300px;
-    margin-left: 200px;
-}
-
-.column {
-    display: flex;
-
+    margin-bottom: 20px;
+    justify-items: start;
+    justify-content: start;
 }
 
 .about-content {
-
-    width: 600px;
-    margin-left: 100px;
-    padding-top: 26px;
-}.about-content p{
-    margin-top: 4px;
-}
-.pull-quote{
-    margin-top: 35px;
+    width: auto;
 }
 
-@media screen and (max-width: 768px) {
-    .profile-pic {
-       display: none;
+.about-content p {
+    margin-top: 8px;
+}
+
+.pull-quote {
+    position: relative;
+    text-align: center;
+    background-color: #999999;
+    width: auto;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.pull-quote blockquote p {
+    font-weight: 400;
+    color: #333;
+    padding-top: auto;
+}
+
+.pull-quote blockquote:before {
+    content: "";
+    display: block;
+    height: auto;
+    width: auto;
+    background-repeat: no-repeat;
+    background: center center;
+    background-size: contain;
+    background-image: url(../images/icons/icon-quote.svg);
+    transform: translateX(-50%);
+    position: absolute;
+    top: 10px;
+    left: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        height: 700px;
     }
 
     .about-content {
-        width: auto;
-        margin-left: -150px;
-        padding-top: 20px; /* Adjust padding for better mobile layout */
+        margin-left: 20px;
+        text-align: left;
     }
 
-    .column {
-        width: 100%; /* Make columns take full width on mobile */
+    .pic-div {
+        display:none;
+    }
+}
+
+/* Super Media Query for Mobile */
+@media screen and (max-width: 400px) {
+    .about-container {
+        padding: 10px;
+    }
+
+    .about-content h3 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-width: 0.8rem;
+    }
+
+    .pull-quote {
+        padding: 10px;
+    }
+
+    .pull-quote blockquote:before {
+        top: 5px;
     }
 }
